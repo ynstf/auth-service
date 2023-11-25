@@ -1,5 +1,6 @@
 django>=3.2,<4.0
 gunicorn
+requests
 PyJWT
 django-cors-headers
 djangorestframework
