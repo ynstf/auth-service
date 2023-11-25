@@ -1,0 +1,5 @@
+django>=3.2,<4.0
+gunicorn
+PyJWT
+django-cors-headers
+djangorestframework
