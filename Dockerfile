@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.9.7-slim
 
 WORKDIR /app
 
@@ -10,6 +10,7 @@ COPY requirements.txt requirements.txt
 COPY . .
 
 RUN /opt/venv/bin/pip install pip --upgrade && \
+    sudo apt-get install python3-dev default-libmysqlclient-dev build-essential \
     /opt/venv/bin/pip install -r requirements.txt && \
     chmod +x entrypoint.sh
 
