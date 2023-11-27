@@ -74,6 +74,22 @@ WSGI_APPLICATION = 'auth.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+DB_DATABASE = 'igxvggzn'
+DB_USERNAME = 'igxvggzn'
+DB_PASSWORD = 'd1tAH70iAtxdJYrQuPSBICRvgcfhCdHs'
+DB_HOST = 'surus.db.elephantsql.com'
+
+DATABASES = {
+    "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": DB_DATABASE,
+            "USER": DB_USERNAME,
+            "PASSWORD": DB_PASSWORD,
+            'HOST': DB_HOST,
+            'PORT': 5432, #default port you don't need to mention in docker-compose
+            }
+}
+"""
 DATABASES = {  
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
@@ -87,6 +103,8 @@ DATABASES = {
         }  
     }  
 }  
+"""
+
 """
 DATABASES = {
     'default': {
