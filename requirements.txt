@@ -5,3 +5,8 @@ PyJWT
 django-cors-headers
 djangorestframework
 mysqlclient
+django-dotenv
+psycopg2-binary
+django-storages
+boto3
+Pillow
