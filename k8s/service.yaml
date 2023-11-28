@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: auth
 spec:
-  selector:
-    app: auth
   type: ClusterIP
   ports:
-    - port: 7777
-      targetPort: 7777
+    - name: http
       protocol: TCP
+      port: 7777
+      targetPort: 7777
+  selector:
+    app: auth
+
